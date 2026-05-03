@@ -48,8 +48,7 @@ const userSchema = new mongoose.Schema({
 });
 
 // ─── Indexes ──────────────────────────────────────────────────────────────
-userSchema.index({ email: 1 });
-userSchema.index({ googleId: 1 });
+// (Indices for email and googleId are handled in schema definition or sparse automatically)
 
 // ─── Hooks ────────────────────────────────────────────────────────────────
 userSchema.pre('save', async function (next) {
