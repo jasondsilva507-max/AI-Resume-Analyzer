@@ -2,11 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_API_URL": "@resume-api-url",
-    "NEXT_PUBLIC_ANTHROPIC_API_KEY": "@anthropic-api-key",
-    "NEXT_PUBLIC_GOOGLE_CLIENT_ID": "@google-client-id"
-  },
   "headers": [
     {
       "source": "/api/(.*)",
